@@ -8,7 +8,7 @@ const rpc = createSolanaRpc(devnet("https://api.devnet.solana.com"));
 console.log(
   "\nThis address is your public key. It's safe to share."
 );
-const { value: balance } = await rpc.getBalance("Wallet_Address").send();
+const { value: balance } = await rpc.getBalance("edSQ1W2P228wXAuNTALJTfartmNYUET1xg1e5kSujMa").send();
 const balanceInSol = Number(balance) / 1_000_000_000;
 
 console.log(`Balance: ${balanceInSol} SOL`);
